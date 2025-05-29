@@ -1,9 +1,12 @@
 import { reshiPicHomepage, ReshiPicHomepage } from './plugin';
-import { TextEncoder, TextDecoder } from 'util';
 import { rootRouteRef } from './routes';
 
-global.TextEncoder = TextEncoder as any;
-global.TextDecoder = TextDecoder as any;
+// Use Node.js globals instead of direct util import
+if (typeof global.TextEncoder === 'undefined') {
+  // These will be available in the Node.js environment
+  global.TextEncoder = globalThis.TextEncoder;
+  global.TextDecoder = globalThis.TextDecoder;
+}
 
 describe('reshi-pic plugin', () => {
   it('should export plugin instance', () => {

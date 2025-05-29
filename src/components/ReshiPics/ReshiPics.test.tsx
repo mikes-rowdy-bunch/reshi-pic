@@ -1,4 +1,4 @@
-import React from 'react';
+import { createElement } from 'react';
 import { ReshiPic } from './ReshiPics';
 import { ReshiPic as ReshiPicType } from '../../types';
 
@@ -23,7 +23,7 @@ describe('ReshiPic', () => {
     // This is a type check test - if the component accepts the props without type errors, the test passes
     expect(() => {
       // Just creating the element, not rendering it
-      React.createElement(ReshiPic, { extraPics });
+      createElement(ReshiPic, { extraPics });
     }).not.toThrow();
   });
 });
