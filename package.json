@@ -47,7 +47,9 @@
     "react": "^16.13.1 || ^17.0.0 || ^18.0.0"
   },
   "files": [
-    "dist"
+    "src",
+    "package.json",
+    "README.md",
   ],
   "description": "A Nice Plugin where Reshi will give words of wisdom!",
   "repository": {
