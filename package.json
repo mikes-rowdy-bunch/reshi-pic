@@ -1,6 +1,6 @@
 {
   "name": "@micdavis1992/plugin-reshi-pic",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "license": "Apache-2.0",
   "private": false,
   "main": "src/index.ts",
@@ -14,7 +14,7 @@
     "role": "frontend-plugin",
     "pluginId": "reshi-pic",
     "pluginPackages": [
-      "@backstage/plugin-reshi-pic"
+      "@micdavis1992/plugin-reshi-pic"
     ]
   },
   "sideEffects": false,
@@ -51,7 +51,7 @@
     "react": "^16.13.1 || ^17.0.0 || ^18.0.0"
   },
   "files": [
-    "src",
+    "dist",
     "package.json",
     "README.md"
   ],

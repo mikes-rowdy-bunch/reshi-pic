@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 import { ReshiPic } from './ReshiPic'; // Updated import path if needed
-import reshiPic1 from '../../pics/reshi-pic1.png';
-import reshiPic2 from '../../pics/reshi-pic2.png';
-import reshiPic3 from '../../pics/reshi-pic3.png';
-import reshiPic4 from '../../pics/reshi-pic4.png';
-import reshiPic5 from '../../pics/reshi-pic5.png';
+import reshiPic1 from '../../pics/reshi-pic1.jpg';
+import reshiPic2 from '../../pics/reshi-pic2.jpg';
+import reshiPic3 from '../../pics/reshi-pic3.jpg';
+import reshiPic4 from '../../pics/reshi-pic4.jpg';
+import reshiPic5 from '../../pics/reshi-pic5.jpg';
 
 describe('ReshiPic', () => {
   it('renders an image with alt text "Random Reshi"', () => {
