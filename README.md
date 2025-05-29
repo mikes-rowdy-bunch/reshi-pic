@@ -58,3 +58,10 @@ An example of what you can see!
 ## License
 ---
 This plugin is released under the Apache-2.0 License.
+
+## TODO
+---
+- Semantic Versioning
+- OctoSTS
+- Pipeline to publish to NPM
+- Testing
