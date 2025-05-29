@@ -1,8 +1,8 @@
 {
-  "name": "@backstage/plugin-reshi-pic",
-  "version": "0.1.0",
+  "name": "@micdavis1992/plugin-reshi-pic",
+  "version": "0.1.1",
   "license": "Apache-2.0",
-  "private": true,
+  "private": false,
   "main": "src/index.ts",
   "types": "src/index.ts",
   "publishConfig": {
@@ -11,7 +11,11 @@
     "types": "dist/index.d.ts"
   },
   "backstage": {
-    "role": "frontend-plugin"
+    "role": "frontend-plugin",
+    "pluginId": "reshi-pic",
+    "pluginPackages": [
+      "@backstage/plugin-reshi-pic"
+    ]
   },
   "sideEffects": false,
   "scripts": {
@@ -54,14 +58,15 @@
   "description": "A Nice Plugin where Reshi will give words of wisdom!",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikes-rowdy-bunch/reshi-pic.git"
+    "url": "git+https://github.com/mikes-rowdy-bunch/reshi-pic.git",
+    "directory": "."
   },
   "keywords": [
     "backstage",
     "plugin",
     "reshi"
   ],
-  "author": "michael-davis76",
+  "author": "micdavis76",
   "bugs": {
     "url": "https://github.com/mikes-rowdy-bunch/reshi-pic/issues"
   },
