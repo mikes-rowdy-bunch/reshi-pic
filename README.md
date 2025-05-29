@@ -51,7 +51,7 @@ const overviewContent = (
 ---
 An example of what you can see!
 
-![Reshi](./src/pics/reshi_pic1.png)
+![Reshi](./src/pics/reshi_pic1.jpg)
 
 ### Testing
 
