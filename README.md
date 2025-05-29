@@ -1,67 +1,42 @@
-# reshi-pic
+# ReshiPics Plugin for Backstage
 
-Welcome to the reshi-pic plugin!
+A Backstage plugin for displaying Reshi pictures.
 
-This plugin allows you to see my dog Reshi and he will give you some words of wisdom!
+## Development
 
-_This plugin was created through the Backstage CLI_
+### Prerequisites
 
-## How to use
----
+- Node.js
+- Yarn
 
-1. Install the plugin into your Backstage environment:
-    `yarn --cwd packages/app add @micdavis1992/plugin-reshi-pic`
+### Setup
 
-2. Import the card into your app for whichever page you want to use it on!
 ```bash
-import { ReshiPic } from '@micdavis1992/plugin-reshi-pic';
+yarn install
 ```
 
-3. Add the card to your page!
+### Testing
 
-```diff
-const overviewContent = (
-  <Grid container spacing={3} alignItems="stretch">
-    {entityWarningContent}
-    <Grid item md={6}>
-      <EntityAboutCard variant="gridItem" />
-    </Grid>
-    <Grid item md={6} xs={12}>
-      <EntityCatalogGraphCard variant="gridItem" height={400} />
-    </Grid>
-+    <Grid item md={4} xs={12}>
-+      <ReshiPic />
-+    </Grid>
+This project uses Jest for testing. Run tests with:
 
-    <Grid item md={6} xs={12}>
-      <OpaMetadataAnalysisCard />
-    </Grid>
-
-    <Grid item md={4} xs={12}>
-      <EntityLinksCard />
-    </Grid>
-    <Grid item md={8} xs={12}>
-      <EntityHasSubcomponentsCard variant="gridItem" />
-    </Grid>
-  </Grid>
-);
+```bash
+yarn test
 ```
 
-## Example
----
+### Test Configuration
 
-An example of what you can see!
+The project includes a Jest setup file (`jest.setup.js`) that provides polyfills for browser APIs that are missing in the Node.js environment, such as TextEncoder and TextDecoder.
 
-![Reshi](./src/pics/reshi-pic1.jpg)
+### Image Handling in Tests
 
+Image imports in tests are handled by a custom file transformer that replaces image imports with a stub during testing.
 
-## License
----
-This plugin is released under the Apache-2.0 License.
+## Building
 
-## TODO
----
-- Semantic Versioning
-- OctoSTS
-- Pipeline to publish to NPM
-- Testing
+```bash
+yarn build
+```
+
+## Contributing
+
+Please ensure all tests pass before submitting a pull request.

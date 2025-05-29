@@ -1,2 +1,2 @@
-export * from './components/ReshiPics';
-export * from './types';
+export { ReshiPic } from './components/ReshiPics';
+export type { ReshiPic as ReshiPicType } from './types';
