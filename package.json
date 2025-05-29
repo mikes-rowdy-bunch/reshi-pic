@@ -1,5 +1,5 @@
 {
-  "name": "@internal/plugin-reshi-pic",
+  "name": "@backstage/plugin-reshi-pic",
   "version": "0.1.0",
   "license": "Apache-2.0",
   "private": true,
@@ -48,5 +48,20 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "description": "A Nice Plugin where Reshi will give words of wisdom!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikes-rowdy-bunch/reshi-pic.git"
+  },
+  "keywords": [
+    "backstage",
+    "plugin",
+    "reshi"
+  ],
+  "author": "michael-davis76",
+  "bugs": {
+    "url": "https://github.com/mikes-rowdy-bunch/reshi-pic/issues"
+  },
+  "homepage": "https://github.com/mikes-rowdy-bunch/reshi-pic#readme"
 }

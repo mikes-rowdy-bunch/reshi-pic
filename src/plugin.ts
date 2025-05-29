@@ -1,6 +1,8 @@
 /* src/plugin.ts */
-import { createPlugin, createRouteRef } from '@backstage/core-plugin-api';
-import ExampleComponent from './components/ExampleComponent';
+import {
+  createPlugin,
+  createRoutableExtension,
+} from '@backstage/core-plugin-api';
 import { rootRouteRef } from './routes';
 
 // Create a plugin instance and export this from your plugin package
