@@ -87,6 +87,7 @@ jobs:
         id: semantic
         env:
           GITHUB_TOKEN: ${{ steps.octo-sts.outputs.token }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           VERSION=$(yarn semantic-release --dry-run | grep -oP 'The next release version is \K[0-9]+\.[0-9]+\.[0-9]+' || echo '')
           if [ -n "$VERSION" ]; then
@@ -96,8 +97,3 @@ jobs:
             echo "No new version to be released"
             exit 0
           fi
-
-      - name: Publish to NPM
-        env:
-          NODE_AUTH_TOKEN: ${{ steps.octo-sts.outputs.token }}
-        run: npm publish
