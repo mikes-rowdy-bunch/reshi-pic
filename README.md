@@ -125,8 +125,3 @@ Releases are automated through GitHub Actions when changes are pushed to the mai
 ---
 This plugin is released under the Apache-2.0 license.
 
-## TODO
----
-- Octo-sts
-- Pipeline to publish NPM
-- Semantic Versioning
