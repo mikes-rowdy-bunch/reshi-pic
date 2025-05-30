@@ -8,7 +8,7 @@
   "publishConfig": {
     "access": "public",
     "main": "src/index.ts",
-    "types": "src/index.ts"
+    "types": "src/types.ts"
   },
   "backstage": {
     "role": "frontend-plugin",
