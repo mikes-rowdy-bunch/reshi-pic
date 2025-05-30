@@ -1,0 +1,30 @@
+{
+  "extends": ["@commitlint/config-conventional"],
+  "rules": {
+    "body-max-line-length": [2, "always", 200],
+    "type-enum": [
+      2,
+      "always",
+      [
+        "feat",
+        "fix",
+        "perf",
+        "docs",
+        "chore",
+        "style",
+        "refactor",
+        "ci",
+        "test",
+        "revert",
+        "breaking",
+        "major",
+        "minor"
+      ]
+    ],
+    "type-case": [2, "always", "lower-case"],
+    "type-empty": [2, "never"],
+    "subject-empty": [2, "never"],
+    "subject-full-stop": [2, "never", "."],
+    "subject-case": [0]
+  }
+}
