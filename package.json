@@ -7,8 +7,8 @@
   "types": "src/index.ts",
   "publishConfig": {
     "access": "public",
-    "main": "dist/src/index.d.ts",
-    "types": "dist/src/types.d.ts"
+    "main": "dist/src/index.esm.ts",
+    "types": "dist/src/index.d.ts"
   },
   "backstage": {
     "role": "frontend-plugin",
