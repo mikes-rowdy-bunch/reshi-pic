@@ -1,6 +1,6 @@
 {
   "name": "@micdavis1992/plugin-reshi-pic",
-  "version": "0.0.0",
+  "version": "0.1.2",
   "license": "Apache-2.0",
   "private": false,
   "main": "src/index.ts",
@@ -50,6 +50,11 @@
     "@backstage/core-app-api": "^1.17.0",
     "@backstage/dev-utils": "^1.1.10",
     "@backstage/test-utils": "^1.7.8",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.3",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.3",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.0.0",
@@ -57,7 +62,9 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
     "msw": "^1.0.0",
-    "react": "^16.13.1 || ^17.0.0 || ^18.0.0"
+    "react": "^16.13.1 || ^17.0.0 || ^18.0.0",
+    "semantic-release": "^24.2.5",
+    "typescript": "^5.8.3"
   },
   "files": [
     "dist",
