@@ -29,7 +29,7 @@ jobs:
           cache: 'yarn'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --ignore-engines --ignore-peer-dependencies
+        run: yarn install --ignore-engines --ignore-peer-dependencies
 
       - name: Run linting
         run: yarn lint
