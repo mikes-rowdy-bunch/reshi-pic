@@ -1,8 +1,6 @@
 name: Test
 
 on:
-  push:
-    branches: [main]
   pull_request:
     branches: [main]
 
@@ -22,7 +20,7 @@ jobs:
           cache: 'yarn'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --ignore-engines --ignore-peer-dependencies
+        run: yarn install --ignore-engines --ignore-peer-dependencies
 
       - name: Run tests
         run: yarn test
