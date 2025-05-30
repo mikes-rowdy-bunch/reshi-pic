@@ -79,6 +79,48 @@ yarn build
 
 Please ensure all tests pass before submitting a pull request.
 
+### Commit Guidelines
+
+This project uses conventional commits to automate versioning and release notes. Your commit messages must follow this format:
+
+```
+<type>: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+Where `type` must be one of:
+
+- `feat`: A new feature (minor version bump)
+- `fix`: A bug fix (patch version bump)
+- `perf`: A performance improvement
+- `docs`: Documentation only changes
+- `chore`: Changes to the build process or auxiliary tools
+- `style`: Changes that do not affect the meaning of the code
+- `refactor`: Code changes that neither fix a bug nor add a feature
+- `ci`: Changes to CI configuration files and scripts
+- `test`: Adding missing tests or correcting existing tests
+- `revert`: Reverting a previous commit
+- `breaking`: Introduces a breaking change (major version bump)
+- `major`: Explicit major version bump
+- `minor`: Explicit minor version bump
+
+Examples:
+
+```
+feat: add new dog wisdom feature
+fix: correct image display on mobile devices
+docs: update installation instructions
+```
+
+Commit messages are automatically validated by a pre-commit hook. Invalid commit messages will be rejected.
+
+### Release Process
+
+Releases are automated through GitHub Actions when changes are pushed to the main branch. The semantic-release tool analyzes commit messages to determine the next version number and automatically publishes to NPM.
+
 ## License
 ---
 This plugin is released under the Apache-2.0 license.

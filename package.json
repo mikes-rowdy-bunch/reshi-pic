@@ -26,7 +26,8 @@
     "test:backstage": "backstage-cli package test",
     "clean": "backstage-cli package clean",
     "prepack": "backstage-cli package prepack",
-    "postpack": "backstage-cli package postpack"
+    "postpack": "backstage-cli package postpack",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@backstage/core-components": "^0.17.2",
@@ -50,10 +51,13 @@
     "@backstage/core-app-api": "^1.17.0",
     "@backstage/dev-utils": "^1.1.10",
     "@backstage/test-utils": "^1.7.8",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.0.0",
     "@types/jest": "^29.5.14",
+    "husky": "^9.1.7",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
     "msw": "^1.0.0",
