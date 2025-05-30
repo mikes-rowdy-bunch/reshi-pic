@@ -1,5 +1,4 @@
 # ReshiPics Plugin for Backstage
-adding this
 
 Welcome to the reshi-pic plugin!
 
