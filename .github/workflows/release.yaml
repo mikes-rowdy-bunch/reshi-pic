@@ -81,7 +81,13 @@ jobs:
         run: yarn add -D semantic-release @semantic-release/git @semantic-release/github @semantic-release/npm @semantic-release/commit-analyzer @semantic-release/release-notes-generator typescript
 
       - name: Build package
-        run: yarn clean && yarn tsc && yarn build
+        run: |
+          yarn clean
+          yarn tsc
+          # Copy types.d.ts to dist-types/src to fix path resolution
+          mkdir -p dist-types/src
+          cp dist/types.d.ts dist-types/src/
+          yarn build
 
       - name: Create Release
         id: semantic
