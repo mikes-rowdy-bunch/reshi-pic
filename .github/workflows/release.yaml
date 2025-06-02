@@ -82,10 +82,9 @@ jobs:
 
       - name: Build package
         run: |
+          # Compile TypeScript to JavaScript
           yarn tsc
-          # Copy types.d.ts to dist-types/src to fix path resolution
-          mkdir -p dist-types/src
-          cp dist/types.d.ts dist-types/src/
+          # Run the Backstage CLI build
           yarn build
 
       - name: Create Release

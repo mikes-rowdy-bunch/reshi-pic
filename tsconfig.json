@@ -6,8 +6,8 @@
     "outDir": "dist",
     "rootDir": "src",
     "declaration": true,
-    "declarationDir": "dist-types/src",
     "declarationMap": true,
+    "declarationDir": "dist-types/src",
     "sourceMap": true,
     "useUnknownInCatchVariables": false
   }
