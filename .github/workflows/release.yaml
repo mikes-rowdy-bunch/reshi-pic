@@ -81,7 +81,7 @@ jobs:
         run: yarn add -D semantic-release @semantic-release/git @semantic-release/github @semantic-release/npm @semantic-release/commit-analyzer @semantic-release/release-notes-generator typescript
 
       - name: Build package
-        run: yarn tsc
+        run: yarn clean && yarn tsc && yarn build
 
       - name: Create Release
         id: semantic
