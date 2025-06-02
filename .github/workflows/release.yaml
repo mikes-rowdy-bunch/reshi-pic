@@ -82,7 +82,6 @@ jobs:
 
       - name: Build package
         run: |
-          yarn clean
           yarn tsc
           # Copy types.d.ts to dist-types/src to fix path resolution
           mkdir -p dist-types/src
